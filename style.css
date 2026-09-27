@@ -13,4 +13,16 @@ nav a {
   color: white;
   text-decoration: none;
   border-radius: 6px;
+}.domain {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 0;
+}
+.domain a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 8px;
+  color: #2563eb;
+  font-weight: 600;
 }
