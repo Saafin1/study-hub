@@ -126,7 +126,95 @@ th {
 .explanation h4:first-child { margin-top: 0; }
 .result-banner { font-weight: 600; margin-bottom: 8px; }
 .result-banner.correct { color: #16a34a; }
-.result-banner.wrong { color: #dc2626; }.domain {
+.result-banner.wrong { color: #dc2626; }
+
+/* Big section cards on the Math hub page */
+.section-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 24px 0;
+}
+.section-card {
+  display: block;
+  border: 2px solid #2563eb;
+  border-radius: 10px;
+  padding: 20px;
+  text-decoration: none;
+  color: inherit;
+  background: #eff6ff;
+}
+.section-card h2 { margin: 0 0 6px 0; color: #1d4ed8; }
+.section-card p { margin: 0; color: #334155; }
+
+/* Desmos annotated breakdown (Study Guide) */
+.d-line {
+  font-family: "SF Mono", Consolas, monospace;
+  font-size: 1.05em;
+  padding: 10px 14px;
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 6px;
+  margin: 10px 0 6px 0;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.d-part { padding: 2px 5px; border-radius: 4px; margin: 0 1px; }
+.d-c1 { background: #1d4ed8; }
+.d-c2 { background: #16a34a; }
+.d-c3 { background: #9333ea; }
+.d-c4 { background: #ea580c; }
+.d-legend { display: flex; flex-direction: column; gap: 6px; margin: 0 0 20px 0; }
+.d-legend-item { display: flex; align-items: flex-start; gap: 8px; font-size: 0.95em; }
+.d-swatch { width: 14px; height: 14px; border-radius: 4px; flex-shrink: 0; margin-top: 3px; }
+.d-swatch.d-c1 { background: #1d4ed8; }
+.d-swatch.d-c2 { background: #16a34a; }
+.d-swatch.d-c3 { background: #9333ea; }
+.d-swatch.d-c4 { background: #ea580c; }
+.d-result {
+  background: #f0fdf4;
+  border-left: 4px solid #16a34a;
+  padding: 10px 14px;
+  border-radius: 0 6px 6px 0;
+  margin-bottom: 20px;
+}
+.calculator-fallback {
+  padding: 20px;
+  text-align: center;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  color: #555;
+}
+.subtopic-section {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 20px;
+  margin-top: 28px;
+}
+
+/* Practice page topic selector */
+.selector-domain {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin: 12px 0;
+}
+.selector-domain.disabled { opacity: 0.5; }
+.selector-domain h3 { margin: 0 0 8px 0; display: flex; align-items: center; gap: 8px; }
+.selector-domain .subtopics { display: flex; flex-direction: column; gap: 6px; margin-left: 24px; }
+.selector-domain label { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+.start-practice-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1.05em;
+  cursor: pointer;
+  margin: 16px 0;
+}
+.start-practice-btn:hover { background: #15803d; }
+#practice-results { margin-top: 24px; }
+.practice-empty-msg { color: #888; font-style: italic; }.domain {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
