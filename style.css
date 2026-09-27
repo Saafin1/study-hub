@@ -13,6 +13,39 @@ nav a {
   color: white;
   text-decoration: none;
   border-radius: 6px;
+}
+nav a.disabled {
+  background: #cbd5e1;
+  color: #64748b;
+  cursor: default;
+  pointer-events: none;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+  text-align: left;
+}
+th {
+  background: #f1f5f9;
+}
+.example {
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+}
+.tip {
+  background: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
 }.domain {
   border: 1px solid #ddd;
   border-radius: 8px;
