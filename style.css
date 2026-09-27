@@ -1,0 +1,16 @@
+body {
+  font-family: system-ui, sans-serif;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+nav a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px 16px;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
