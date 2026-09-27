@@ -46,7 +46,87 @@ th {
   padding: 12px 16px;
   margin: 12px 0;
   border-radius: 0 6px 6px 0;
-}.domain {
+}
+.domain-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+.domain-card {
+  display: block;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-decoration: none;
+  color: inherit;
+}
+.domain-card h2 { margin: 0 0 4px 0; font-size: 1.1em; color: #2563eb; }
+.domain-card p { margin: 0; color: #555; }
+.domain-card:not(.disabled):hover { border-color: #2563eb; background: #f8fafc; }
+.domain-card.disabled { opacity: 0.55; }
+.domain-card.disabled h2 { color: #64748b; }
+
+.strategy-box {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.strategy-box h3 { margin-top: 0; }
+
+#calculator {
+  width: 100%;
+  height: 400px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+.question {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 20px 0;
+}
+.question .prompt { font-weight: 600; margin-bottom: 12px; }
+.question .choices { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.question label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.question label:hover { background: #f8fafc; }
+.question label.correct-choice { background: #dcfce7; border-color: #22c55e; }
+.question label.wrong-choice { background: #fee2e2; border-color: #ef4444; }
+.check-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95em;
+}
+.check-btn:hover { background: #1d4ed8; }
+.explanation {
+  display: none;
+  margin-top: 14px;
+  padding: 14px 16px;
+  background: #f8fafc;
+  border-left: 4px solid #2563eb;
+  border-radius: 0 6px 6px 0;
+}
+.explanation.show { display: block; }
+.explanation h4 { margin: 10px 0 4px 0; font-size: 0.95em; }
+.explanation h4:first-child { margin-top: 0; }
+.result-banner { font-weight: 600; margin-bottom: 8px; }
+.result-banner.correct { color: #16a34a; }
+.result-banner.wrong { color: #dc2626; }.domain {
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
